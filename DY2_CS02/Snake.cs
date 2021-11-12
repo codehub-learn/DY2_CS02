@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DY2_CS02
 {
-    internal class Snake
+    internal class Snake : Animal
     {
+        public virtual bool Poisonous { get; set; } = true;
+
         private float _length;
         public float Length {
             get { 
@@ -23,6 +25,13 @@ namespace DY2_CS02
                 _length = value;
             }
         }
+
+        public virtual void Slither() 
+        {
+            Console.WriteLine("The snake moves");
+        }
+
+        public override void Move(int dist) { }
  
     }
 }

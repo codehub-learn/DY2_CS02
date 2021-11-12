@@ -58,6 +58,11 @@ namespace DY2_CS02
             Console.WriteLine($"{this.Name} yawned for decimal {duration}");
         }
 
+        public override void Move(int distance) 
+        {
+            Console.WriteLine("The cat moves");
+        }
+
         
     }
 }

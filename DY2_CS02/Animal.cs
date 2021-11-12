@@ -13,8 +13,18 @@ namespace DY2_CS02
         public int? Age { get; set; }
         public string Greeting { get; } = "Hello from animal";
 
-        public Animal (string Name) { this.Name = Name; }
+        public Animal (string Name) 
+        {
+            this.Name = Name; 
+        }
 
-        public void Eat() { }
+        public void Eat() 
+        { 
+            Console.WriteLine("The animal wets"); 
+        }
+
+        public abstract void Move(int distance);
+
+        public Animal() { }
     }
 }

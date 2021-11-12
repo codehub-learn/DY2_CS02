@@ -42,6 +42,26 @@
             roomy2.Name = "Roomy";
             roomy2.Age = 8;
             roomy2.Gender = "Female";
+
+            Mamba mamba = new Mamba();
+            Console.WriteLine(mamba.Poisonous);
+
+            CornSnake cornSnake = new CornSnake();
+            Console.WriteLine(cornSnake.Poisonous);
+
+            Console.WriteLine("------");
+            
+            Snake snake2 = new CornSnake();
+            CornSnake newSake = (CornSnake)snake2;
+            Console.WriteLine("Cornske Name: " + newSake.CornSnakeName);
+
+            Console.WriteLine(snake2.Poisonous);
+            List<Snake> list = new List<Snake>();
+            list.Add(cornSnake);
+            list.Add(mamba);
+
+            IShape shape = new Triangle();
+            shape.GetArea();
         }
     }
 }
